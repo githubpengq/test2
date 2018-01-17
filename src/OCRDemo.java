@@ -6,8 +6,8 @@ import net.sourceforge.tess4j.Tesseract;
 import net.sourceforge.tess4j.TesseractException;
 
 /**
- * ±¾½Ì³ÌÓÉ http://bbs.datahref.com/ Ìá¹© Tess4jÑéÖ¤ÂëÊ¶±ğÊ¾Àı ¹¤³ÌÖĞtessdataÎÄ¼ş¼Ğ°üº¬ÁËÊ¶±ğÓ¢ÎÄËùĞèµÄÊı¾İ
- * ĞèÒªÊ¶±ğÆäËûÓïÑÔ¿Îµ½https://github.com/tesseract-ocr/tessdataÏÂÔØÏà¹ØÊı¾İ ·Åµ½tessdataÎÄ¼ş¼ĞÖĞ
+ * æœ¬æ•™ç¨‹ç”± http://bbs.datahref.com/ æä¾› Tess4jéªŒè¯ç è¯†åˆ«ç¤ºä¾‹ å·¥ç¨‹ä¸­tessdataæ–‡ä»¶å¤¹åŒ…å«äº†è¯†åˆ«è‹±æ–‡æ‰€éœ€çš„æ•°æ®
+ * éœ€è¦è¯†åˆ«å…¶ä»–è¯­è¨€è¯¾åˆ°https://github.com/tesseract-ocr/tessdataä¸‹è½½ç›¸å…³æ•°æ® æ”¾åˆ°tessdataæ–‡ä»¶å¤¹ä¸­
  * 
  * @author hu
  *
@@ -16,15 +16,15 @@ public class OCRDemo {
 
 	public static void main(String[] args) throws TesseractException {
 		ITesseract instance = new Tesseract();
-		File imgDir = new File("img_data");
-		// ¶Ôimg_dataÎÄ¼ş¼ĞÖĞµÄÃ¿¸öÑéÖ¤Âë½øĞĞÊ¶±ğ
-		// ÎÄ¼şÃû¼´ÕıÈ·µÄ½á¹û
+		instance = new Tesseract(); 
+		File imgDir = new File("img_data323");
+		// æ–‡ä»¶åå³æ­£ç¡®çš„ç»“æœ
 		for (File imgFile : imgDir.listFiles()) {
-			// ¸ÃÀı×ÓÊäÈëµÄÊÇÎÄ¼ş£¬Ò²¿ÉÊäÈëBufferedImage
+			// è¯¥ä¾‹å­è¾“å…¥çš„æ˜¯æ–‡ä»¶ï¼Œä¹Ÿå¯è¾“å…¥BufferedImage
 			String ocrResult = instance.doOCR(imgFile);
-			// Êä³öÍ¼Æ¬ÎÄ¼şÃû£¬¼´ÕıÈ·Ê¶±ğ½á¹û
+			// è¾“å‡ºå›¾ç‰‡æ–‡ä»¶åï¼Œå³æ­£ç¡®è¯†åˆ«ç»“æœ
 			System.out.println("ImgFile: " + imgFile.getAbsolutePath());
-			// Êä³öÊ¶±ğ½á¹û
+			// è¾“å‡ºè¯†åˆ«ç»“æœ
 			System.out.println("OCR Result: " + ocrResult);
 		}
 	}
