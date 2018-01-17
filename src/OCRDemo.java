@@ -16,11 +16,41 @@ public class OCRDemo {
 
 	public static void main(String[] args) throws TesseractException {
 		ITesseract instance = new Tesseract();
+		instance = new TeTesseract instance = new Tesseract();
 		instance = new Tesseract(); 
 		File imgDir = new File("img_data323");
 		// 文件名即正确的结果
 		for (File imgFile : imgDir.listFiles()) {
 			// 该例子输入的是文件，也可输入BufferedImage
+			String ocrResult = instance.doOCR(imgFile);
+			// 输出图片文件名，即正确识别结果
+			System.out.println("ImgFile: " + imgFile.getAbsolutePath());
+			// 输出识别结果
+			System.out.println("OCR Resusseract(); 
+		File imgDir = new File("img_data323");
+		// 文件名即正确的结果
+		for (File imgFile : imgDir.listFiles()) {
+			// 该例子输入的是文Tesseract instance = new Tesseract();
+		instance = new Tesseract(); 
+		File imgDir = new File("img_data323");
+		// 文件名即正确的结果
+		for (File imgFile : imgDir.listFiles()) {
+			// 该例子输入的是文件，也可输入BufferedImage
+			String ocrResult = instance.doOCR(imgFile);
+			// 输出图片文件名，即正确识别结果
+			System.out.println("ImgFile: " + imgFile.getAbsolutePath());
+			// 输出识别结果
+			System.out.println("OCR ResuTesseract instance = new Tesseract();
+		instance = new Tesseract(); 
+		File imgDir = new File("img_data323");
+		// 文件名即正确的结果
+		for (File imgFile : imgDir.listFiles()) {
+			// 该例子输入的是文件，也可输入BufferedImage
+			String ocrResult = instance.doOCR(imgFile);
+			// 输出图片文件名，即正确识别结果
+			System.out.println("ImgFile: " + imgFile.getAbsolutePath());
+			// 输出识别结果
+			System.out.println("OCR Resu件，也可输入BufferedImage
 			String ocrResult = instance.doOCR(imgFile);
 			// 输出图片文件名，即正确识别结果
 			System.out.println("ImgFile: " + imgFile.getAbsolutePath());
